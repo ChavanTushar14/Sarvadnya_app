@@ -28,7 +28,7 @@ class _MyHomePage_5State extends State<MyHomePage_5> {
   bool _isPlayerReady = false;
 
   List<String> get _ids => [  
-    widget.user.data["videourl"]
+    widget.user.data()["videourl"]
     
   ];
 
@@ -94,17 +94,6 @@ class _MyHomePage_5State extends State<MyHomePage_5> {
           'Youtube Player Flutter',
           style: TextStyle(color: Colors.white),
         ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.video_library),
-            onPressed: () => Navigator.push(
-              context,
-              CupertinoPageRoute(
-                builder: (context) => VideoList_5(),
-              ),
-            ),
-          ),
-        ],
       ),
       body: ListView(
         children: [

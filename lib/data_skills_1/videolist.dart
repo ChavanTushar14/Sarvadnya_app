@@ -14,7 +14,7 @@ class VideoList extends StatefulWidget {
 
 class _VideoListState extends State<VideoList> {
   
-  List<YoutubePlayerController> get _controllers => [ widget.user.data["videourl"]
+  List<YoutubePlayerController> get _controllers => [ widget.user.data()["videourl"]
     
   ]
       .map<YoutubePlayerController>(

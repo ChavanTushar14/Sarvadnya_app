@@ -28,7 +28,7 @@ class _MyHomePage_2State extends State<MyHomePage_2> {
   bool _isPlayerReady = false;
 
   List<String> get _ids => [  
-    widget.user.data["videourl"]
+    widget.user.data()["videourl"]
     
   ];
 
